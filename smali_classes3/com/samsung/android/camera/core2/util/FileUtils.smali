@@ -79,7 +79,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 7
 
     const/4 v0, 0x0
 
@@ -113,6 +113,7 @@
 
     sput-object v3, Lcom/samsung/android/camera/core2/util/FileUtils;->DATA_VENDOR:Ljava/nio/file/Path;
 
+    :try_start_0
     invoke-static {}, Lcom/samsung/android/camera/core2/util/SemWrapper;->semGetCurrentUser()I
 
     move-result v4
@@ -122,8 +123,22 @@
     if-ne v4, v5, :cond_0
 
     move-object v1, v2
+    :try_end_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v4
+
+    const-string v5, "FileUtils"
+
+    const-string v6, "SecurityException when getting current user, using default path"
+
+    invoke-static {v5, v6, v4}, Lcom/samsung/android/camera/core2/util/CLog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_0
+    :goto_0
     sput-object v1, Lcom/samsung/android/camera/core2/util/FileUtils;->ROOT_SECURE_DIRECTORY_PATH:Ljava/nio/file/Path;
 
     new-instance v2, Ljava/lang/StringBuilder;
