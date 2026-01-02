@@ -4071,118 +4071,11 @@
 .end method
 
 .method public static isSecureCamera(Landroid/content/Context;Landroid/content/Intent;)Z
-    .locals 7
+    .locals 0
 
-    invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    const/4 p0, 0x0
 
-    move-result-object v0
-
-    const-string v1, "android.intent.action.MAIN"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    if-eqz v1, :cond_0
-
-    const-string v1, "isSecure"
-
-    invoke-virtual {p1, v1, v3}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    move p1, v2
-
-    goto :goto_0
-
-    :cond_0
-    move p1, v3
-
-    :goto_0
-    const-string v1, "android.media.action.IMAGE_CAPTURE_SECURE"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    const-string v4, "android.media.action.STILL_IMAGE_CAMERA_SECURE"
-
-    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    const-string v5, "android.provider.action.MOTION_PHOTO_CAPTURE_SECURE"
-
-    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/sec/android/app/camera/util/Util;->isSecureKeyguardLocked(Landroid/content/Context;)Z
-
-    move-result p0
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    const-string v6, "isSecureQuickLaunch="
-
-    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, ", isSecureCapture="
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, ", isSecureStillCapture="
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, ", , isSecureMotionPhotoCapture="
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, ", isSecureKeyguardLocked="
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v6, "Util"
-
-    invoke-static {v5, p0, v6}, LG2/u;->B(Ljava/lang/StringBuilder;ZLjava/lang/String;)V
-
-    if-nez p1, :cond_1
-
-    if-nez v1, :cond_1
-
-    if-nez v4, :cond_1
-
-    if-eqz v0, :cond_2
-
-    :cond_1
-    if-eqz p0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    move v2, v3
-
-    :goto_1
-    return v2
+    return p0
 .end method
 
 .method public static isSecureFolderMode()Z
@@ -4200,38 +4093,10 @@
 .end method
 
 .method public static isSecureKeyguardLocked(Landroid/content/Context;)Z
-    .locals 1
+    .locals 0
 
-    const-string v0, "keyguard"
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/app/KeyguardManager;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Landroid/app/KeyguardManager;->isKeyguardLocked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p0}, Landroid/app/KeyguardManager;->isKeyguardSecure()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
     const/4 p0, 0x0
 
-    :goto_0
     return p0
 .end method
 
