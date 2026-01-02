@@ -88,13 +88,13 @@
     <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
     <uses-permission android:name="com.samsung.android.permission.SEM_VOLD_DATA_MOVE"/>
     <uses-permission android:name="com.samsung.android.permission.ACCESS_SYSTEM_KEY_DISPATCHING"/>
-    <permission android:name="com.sec.android.app.camera.permission.READ_IMAGE_VIDEO_INFO" android:protectionLevel="signature"/>
-    <permission android:name="com.sec.android.app.camera.permission.CameraSettingProvider.READ_WRITE" android:protectionLevel="signature"/>
-    <permission android:name="com.sec.android.app.camera.permission.DOCUMENT_SCAN" android:protectionLevel="signature"/>
-    <permission android:name="com.samsung.android.camera.core2.data.READ" android:protectionLevel="signatureOrSystem"/>
-    <permission android:name="com.samsung.android.camera.core2.data.WRITE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.android.app.camera.permission.READ_IMAGE_VIDEO_INFO" android:protectionLevel="normal"/>
+    <permission android:name="com.sec.android.app.camera.permission.CameraSettingProvider.READ_WRITE" android:protectionLevel="normal"/>
+    <permission android:name="com.sec.android.app.camera.permission.DOCUMENT_SCAN" android:protectionLevel="normal"/>
+    <permission android:name="com.samsung.android.camera.core2.data.READ" android:protectionLevel="normal"/>
+    <permission android:name="com.samsung.android.camera.core2.data.WRITE" android:protectionLevel="normal"/>
     <supports-screens android:anyDensity="true" android:normalScreens="true"/>
-    <permission android:name="com.sec.android.app.camera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <permission android:name="com.sec.android.app.camera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="normal"/>
     <uses-permission android:name="com.sec.android.app.camera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
@@ -118,9 +118,9 @@
     <uses-permission android:name="com.samsung.provider.gppm.data.WRITE"/>
     <uses-permission android:name="com.sec.android.gallery3d.provider2.READ"/>
     <uses-permission android:name="com.sec.android.gallery3d.provider2.WRITE"/>
-    <permission android:name="com.samsung.android.camera.core2.processor.work.REQUEST_WORK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.camera.core2.processor.work.REQUEST_WORK" android:protectionLevel="normal"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <permission android:name="com.samsung.android.motionphoto.app.permission.ACCESS_MOTION_PHOTO_SERVICE" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.android.motionphoto.app.permission.ACCESS_MOTION_PHOTO_SERVICE" android:protectionLevel="normal"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="com.samsung.android.scs.permission.SUPPORTED_FEATURE_PROVIDER"/>
     <uses-permission android:name="com.samsung.android.scs.ai.suggestion.permission.SUGGESTION_PROVIDER"/>
@@ -172,7 +172,7 @@
     <uses-permission android:name="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"/>
     <uses-permission android:name="com.samsung.android.app.deepsky.feedback.provider.permission.SUBMIT_FEEDBACK"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.sec.android.app.camera.CameraApplication" android:resizeableActivity="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.sec.android.app.camera.CameraApplication" android:resizeableActivity="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
         <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="0"/>
         <meta-data android:name="com.samsung.android.bixby.pathRuleAppName" android:value="Camera"/>
         <meta-data android:name="com.samsung.android.bixby.capsuleId" android:value="viv.cameraApp"/>
@@ -191,17 +191,17 @@
                 <action android:name="android.intent.action.CAMERA_BUTTON"/>
             </intent-filter>
         </receiver>
-        <receiver android:exported="true" android:name="com.sec.android.app.camera.receiver.SettingSoftResetReceiver" android:permission="com.sec.android.settings.permission.SOFT_RESET">
+        <receiver android:exported="true" android:name="com.sec.android.app.camera.receiver.SettingSoftResetReceiver">
             <intent-filter>
                 <action android:name="com.samsung.intent.action.SETTINGS_SOFT_RESET"/>
             </intent-filter>
         </receiver>
-        <receiver android:exported="true" android:name="com.sec.android.app.camera.receiver.DemoResetReceiver" android:permission="com.samsung.sea.retailagent.permission.RETAILMODE">
+        <receiver android:exported="true" android:name="com.sec.android.app.camera.receiver.DemoResetReceiver">
             <intent-filter>
                 <action android:name="com.samsung.sea.rm.DEMO_RESET_STARTED"/>
             </intent-filter>
         </receiver>
-        <receiver android:exported="true" android:name="com.sec.android.app.camera.receiver.SmartSwitchReceiver" android:permission="com.wssnps.permission.COM_WSSNPS">
+        <receiver android:exported="true" android:name="com.sec.android.app.camera.receiver.SmartSwitchReceiver">
             <intent-filter>
                 <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_CAMERA"/>
                 <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_CAMERA"/>
@@ -371,7 +371,7 @@
             <meta-data android:name="com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT" android:value="true"/>
         </activity>
         <activity android:exported="false" android:largeHeap="true" android:name="com.sec.android.app.camera.cropper.WidgetCropActivity" android:screenOrientation="sensor" android:theme="@style/AppCompat.ListTheme.FullScreen.Black"/>
-        <activity android:exported="true" android:largeHeap="true" android:name="com.sec.android.app.camera.cropper.DocumentScanActivity" android:permission="com.sec.android.app.camera.permission.DOCUMENT_SCAN" android:screenOrientation="behind" android:showWhenLocked="true" android:theme="@style/DocumentScanActivityStyle">
+        <activity android:exported="true" android:largeHeap="true" android:name="com.sec.android.app.camera.cropper.DocumentScanActivity" android:screenOrientation="behind" android:showWhenLocked="true" android:theme="@style/DocumentScanActivityStyle">
             <meta-data android:name="com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT" android:value="true"/>
             <intent-filter>
                 <action android:name="com.sec.android.app.camera.action.DOCUMENT_SCAN"/>
@@ -418,7 +418,7 @@
         <provider android:authorities="com.sec.android.app.camera.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_file_paths"/>
         </provider>
-        <provider android:authorities="com.sec.android.log.407-399-545299" android:exported="true" android:name="com.sec.android.diagmonagent.log.provider.DiagMonProvider" android:permission="com.sec.android.diagmonagent.permission.PROVIDER"/>
+        <provider android:authorities="com.sec.android.log.407-399-545299" android:exported="true" android:name="com.sec.android.diagmonagent.log.provider.DiagMonProvider"/>
         <provider android:authorities="com.sec.android.app.camera" android:exported="true" android:grantUriPermissions="true" android:name="com.sec.android.app.camera.CustomIndexablesSearchProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
             <intent-filter>
                 <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
@@ -426,7 +426,7 @@
             <meta-data android:name="com.samsung.android.settings.require_settings_key" android:value="@string/top_level_key"/>
             <meta-data android:name="com.samsung.android.settings.require_settings_title" android:value="@string/settings"/>
         </provider>
-        <provider android:authorities="com.sec.android.app.camera.setting.CameraSettingProvider" android:exported="true" android:name="com.sec.android.app.camera.setting.CameraSettingProvider" android:permission="com.sec.android.app.camera.permission.CameraSettingProvider.READ_WRITE"/>
+        <provider android:authorities="com.sec.android.app.camera.setting.CameraSettingProvider" android:exported="true" android:name="com.sec.android.app.camera.setting.CameraSettingProvider"/>
         <provider android:authorities="com.sec.android.app.camera.setting.SideButtonProvider" android:exported="true" android:name="com.sec.android.app.camera.setting.SideButtonProvider">
             <intent-filter>
                 <action android:name="com.samsung.android.intent.action.SIDE_BUTTON_SETTINGS"/>
@@ -510,7 +510,7 @@
         <meta-data android:name="ppp_file_path_policy" android:value="v1.1"/>
         <meta-data android:name="com.sec.android.app.camera.core2.required.recovery_draft_image_br_sending_period" android:value="30"/>
         <service android:exported="false" android:foregroundServiceType="camera" android:name="com.samsung.android.camera.core2.processor.PostProcessorLoggingService"/>
-        <receiver android:exported="true" android:name="com.samsung.android.camera.core2.processor.receiver.RecoveryDraftImageWorkReceiver" android:permission="com.samsung.android.camera.core2.processor.work.REQUEST_WORK">
+        <receiver android:exported="true" android:name="com.samsung.android.camera.core2.processor.receiver.RecoveryDraftImageWorkReceiver">
             <intent-filter>
                 <action android:name="com.samsung.android.camera.core2.processor.work.action.RECOVERY_DRAFT_IMAGE"/>
             </intent-filter>

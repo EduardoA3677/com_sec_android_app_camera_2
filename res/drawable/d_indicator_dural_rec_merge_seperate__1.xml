@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/d_indicator_dural_rec_merge_seperate__2" android:duration="500" android:valueFrom="-26.094" android:valueTo="-27.626" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/d_indicator_dural_rec_merge_seperate__3" android:duration="500" android:valueFrom="-29.063" android:valueTo="-27.563" android:propertyName="translateY" />
+    </set>
+</set>

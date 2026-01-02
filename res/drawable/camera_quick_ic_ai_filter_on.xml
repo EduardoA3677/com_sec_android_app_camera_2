@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector android:height="40.0dp" android:width="40.0dp" android:viewportWidth="40.0" android:viewportHeight="40.0"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="@drawable/$camera_quick_ic_ai_filter_on__0" android:pathData="M16.7,17.5c-3,0 -5.4,2.4 -5.4,5.4s2.4,5.4 5.4,5.4 5.4,-2.4 5.4,-5.4 -2.4,-5.4 -5.4,-5.4Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
-    <path android:fillColor="@drawable/$camera_quick_ic_ai_filter_on__1" android:pathData="M20,11.7c3,0 5.4,2.4 5.4,5.4s-2.4,5.4 -5.4,5.4 -5.4,-2.4 -5.4,-5.4 2.4,-5.4 5.4,-5.4ZM20,12.9c-2.3,0 -4.2,1.9 -4.2,4.2s1.9,4.2 4.2,4.2 4.2,-1.9 4.2,-4.2 -1.9,-4.2 -4.2,-4.2Z" />
-    <path android:fillColor="@drawable/$camera_quick_ic_ai_filter_on__2" android:pathData="M23.3,17.5c3,0 5.4,2.4 5.4,5.4s-2.4,5.4 -5.4,5.4 -5.4,-2.4 -5.4,-5.4 2.4,-5.4 5.4,-5.4Z" android:strokeAlpha="0.5" android:fillAlpha="0.5" />
+    <path android:fillColor="@drawable/d_camera_quick_ic_ai_filter_on__0" android:pathData="M16.7,17.5c-3,0 -5.4,2.4 -5.4,5.4s2.4,5.4 5.4,5.4 5.4,-2.4 5.4,-5.4 -2.4,-5.4 -5.4,-5.4Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
+    <path android:fillColor="@drawable/d_camera_quick_ic_ai_filter_on__1" android:pathData="M20,11.7c3,0 5.4,2.4 5.4,5.4s-2.4,5.4 -5.4,5.4 -5.4,-2.4 -5.4,-5.4 2.4,-5.4 5.4,-5.4ZM20,12.9c-2.3,0 -4.2,1.9 -4.2,4.2s1.9,4.2 4.2,4.2 4.2,-1.9 4.2,-4.2 -1.9,-4.2 -4.2,-4.2Z" />
+    <path android:fillColor="@drawable/d_camera_quick_ic_ai_filter_on__2" android:pathData="M23.3,17.5c3,0 5.4,2.4 5.4,5.4s-2.4,5.4 -5.4,5.4 -5.4,-2.4 -5.4,-5.4 2.4,-5.4 5.4,-5.4Z" android:strokeAlpha="0.5" android:fillAlpha="0.5" />
     <path android:fillColor="#ffcb0c" android:pathData="M21.7,21.3m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
     <path android:fillColor="#ffcb0c" android:pathData="M25,21.3m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
     <path android:fillColor="#ffcb0c" android:pathData="M25,24.5m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />

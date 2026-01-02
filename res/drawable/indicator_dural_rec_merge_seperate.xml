@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<animated-vector android:drawable="@drawable/$indicator_dural_rec_merge_seperate__0"
+<animated-vector android:drawable="@drawable/d_indicator_dural_rec_merge_seperate__0"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <target android:name="s1" android:animation="@drawable/$indicator_dural_rec_merge_seperate__1" />
-    <target android:name="s1pg1" android:animation="@drawable/$indicator_dural_rec_merge_seperate__4" />
-    <target android:name="s1pg1pg5p10" android:animation="@drawable/$indicator_dural_rec_merge_seperate__7" />
-    <target android:name="s1pg1pg4p10" android:animation="@drawable/$indicator_dural_rec_merge_seperate__8" />
-    <target android:name="s1pg1pg3p10" android:animation="@drawable/$indicator_dural_rec_merge_seperate__10" />
-    <target android:name="s1pg1pg2p10" android:animation="@drawable/$indicator_dural_rec_merge_seperate__11" />
-    <target android:name="s1pg1pg1p10" android:animation="@drawable/$indicator_dural_rec_merge_seperate__12" />
+    <target android:name="s1" android:animation="@drawable/d_indicator_dural_rec_merge_seperate__1" />
+    <target android:name="s1pg1" android:animation="@drawable/d_indicator_dural_rec_merge_seperate__4" />
+    <target android:name="s1pg1pg5p10" android:animation="@drawable/d_indicator_dural_rec_merge_seperate__7" />
+    <target android:name="s1pg1pg4p10" android:animation="@drawable/d_indicator_dural_rec_merge_seperate__8" />
+    <target android:name="s1pg1pg3p10" android:animation="@drawable/d_indicator_dural_rec_merge_seperate__10" />
+    <target android:name="s1pg1pg2p10" android:animation="@drawable/d_indicator_dural_rec_merge_seperate__11" />
+    <target android:name="s1pg1pg1p10" android:animation="@drawable/d_indicator_dural_rec_merge_seperate__12" />
 </animated-vector>
