@@ -4797,13 +4797,14 @@
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/setting/CameraPreferenceFragment;->enablePreference(Lcom/sec/android/app/camera/interfaces/CameraSettings$Key;Z)V
 
     :cond_8
-    const v0, 0x7f1302d1
+    # Commented out to enable experimental features menu
+    # const v0, 0x7f1302d1
 
-    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+    # invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
-    move-result-object v0
+    # move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     return-void
 .end method
