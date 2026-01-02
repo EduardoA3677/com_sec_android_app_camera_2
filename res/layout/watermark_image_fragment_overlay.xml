@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/watermark_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:focusable="true" android:layout_width="match_parent" android:layout_height="@dimen/watermark_image_view_height" android:src="@drawable/watermark_bg" android:scaleType="centerCrop" android:contentDescription="@string/watermark_sample_image" />
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/watermark_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/watermark_text_horizontal_margin" android:layout_marginVertical="@dimen/watermark_text_vertical_margin">
+        <com.sec.android.app.camera.widget.StrokedTextView android:textAppearance="@style/SecBold" android:textSize="@dimen/watermark_text_size" android:textColor="@color/watermark_text_color" android:id="@id/model_text" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/watermark_text_height" android:singleLine="true" app:textViewStroke="true" app:textViewStrokeColor="@color/watermark_stroke_color" app:textViewStrokeWidth="@integer/watermark_stroke_width" />
+        <com.sec.android.app.camera.widget.StrokedTextView android:textAppearance="@style/SecBold" android:textSize="@dimen/watermark_text_size" android:textColor="@color/watermark_text_color" android:id="@id/time_text" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/watermark_text_height" app:textViewStroke="true" app:textViewStrokeColor="@color/watermark_stroke_color" app:textViewStrokeWidth="@integer/watermark_stroke_width" />
+    </LinearLayout>
+</FrameLayout>

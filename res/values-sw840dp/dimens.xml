@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesl_glance_circular_progress_large_icon_size">@dimen/circle_progress_icon_size_60</dimen>
+    <dimen name="sesl_glance_circular_progress_medium_icon_size">@dimen/circle_progress_icon_size_60</dimen>
+    <dimen name="sesl_glance_circular_progress_small_icon_size">@dimen/circle_progress_icon_size_46</dimen>
+    <dimen name="sesl_glance_combine_primary_medium_circle_padding">@dimen/circle_padding_52</dimen>
+    <dimen name="sesl_glance_combine_primary_medium_circle_size">52.0dp</dimen>
+    <dimen name="sesl_glance_combine_primary_with_2texts_tiny_icon_size">16.0dp</dimen>
+    <dimen name="sesl_glance_combine_primary_with_text_tiny_icon_size">26.0dp</dimen>
+    <dimen name="sesl_glance_graph_large_title_text_size">@dimen/arc_progress_text_float_60</dimen>
+    <dimen name="sesl_glance_graph_medium_title_text_size">@dimen/arc_progress_text_float_60</dimen>
+    <dimen name="sesl_glance_graph_small_title_text_size">@dimen/arc_progress_text_float_40</dimen>
+    <dimen name="sesl_glance_grid_item_medium_circle_padding">@dimen/circle_padding_60</dimen>
+    <dimen name="sesl_glance_grid_item_medium_circle_size">60.0dp</dimen>
+    <dimen name="sesl_glance_grid_item_with_label_medium_circle_padding">@dimen/circle_padding_52</dimen>
+    <dimen name="sesl_glance_grid_item_with_label_medium_circle_size">52.0dp</dimen>
+    <dimen name="sesl_glance_multi_textblock_small_display_text_size">18.0</dimen>
+    <dimen name="style_graph_large_title_text_size">@dimen/arc_progress_text_dp_60</dimen>
+    <dimen name="style_graph_medium_title_text_size">@dimen/arc_progress_text_dp_60</dimen>
+    <dimen name="style_graph_small_title_text_size">@dimen/arc_progress_text_dp_46</dimen>
+    <dimen name="style_multi_textblock_small_display_text_size">18.0dp</dimen>
+</resources>

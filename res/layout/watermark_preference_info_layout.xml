@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/watermark_frame_style_info_text_size" android:textColor="@color/watermark_description_text_color" android:id="@android:id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/watermark_frame_style_info_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

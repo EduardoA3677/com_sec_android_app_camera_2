@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <ripple android:color="?android:colorControlHighlight">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/qrcode_popup_background_radius" />
+                    <solid android:color="@color/qrcode_popup_background_color" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

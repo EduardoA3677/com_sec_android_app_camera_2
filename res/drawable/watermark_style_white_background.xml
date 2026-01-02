@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/watermark_style_white_background_color" />
+    <stroke android:width="@dimen/watermark_style_white_background_stroke_width" android:color="@color/watermark_style_white_background_stroke_color" />
+    <corners android:radius="@dimen/watermark_style_white_background_radius" />
+</shape>

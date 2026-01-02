@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/layout" android:layout_width="match_parent" android:layout_height="match_parent" android:title="@string/Title_Watermark"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="match_parent" android:layout_height="match_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" style="@style/CollapsingToolbarLayoutStyle">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/AppCompat.AppbarTheme" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:theme="@style/Theme.AppCompat.DayNight" android:orientation="vertical" android:id="@id/listview" android:background="@color/theme_bg_color" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/main_switch" />
+                <androidx.fragment.app.FragmentContainerView android:id="@id/watermark_image_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/setting_list_rounded_corner_offset" />
+                <androidx.fragment.app.FragmentContainerView android:name="com.sec.android.app.camera.setting.WatermarkTypeFragment" android:id="@id/watermark_type_fragment_container" android:background="@color/theme_list_color" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/fragment_container_layout" android:background="@color/theme_list_color" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

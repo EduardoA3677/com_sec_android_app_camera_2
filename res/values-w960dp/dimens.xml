@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesl_config_prefSnackWidth">37.5%</dimen>
+    <item type="dimen" name="sesl_sliding_layout_default_open" format="boolean">true</item>
+    <dimen name="sesl_sliding_pane_contents_width">840.0dp</dimen>
+</resources>

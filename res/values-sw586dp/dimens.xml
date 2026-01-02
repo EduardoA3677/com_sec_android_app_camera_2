@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preview_icon_ratio_fold_main">0.085</dimen>
+    <dimen name="preview_icon_ratio_fold_main_10x6">0.071</dimen>
+    <dimen name="preview_icon_ratio_fold_main_8x6">0.083</dimen>
+    <dimen name="sesl_glance_textblock_item_padding_dual_large_size">12.0</dimen>
+</resources>

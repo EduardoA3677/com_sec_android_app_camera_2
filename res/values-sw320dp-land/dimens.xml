@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preview_icon_ratio_fold_sub">0.147</dimen>
+    <dimen name="sesl_glance_circular_progress_small_icon_size">@dimen/circle_progress_icon_size_34</dimen>
+    <dimen name="sesl_glance_combine_primary_small_circle_padding">@dimen/circle_padding_34</dimen>
+    <dimen name="sesl_glance_combine_primary_small_circle_size">34.0dp</dimen>
+    <dimen name="sesl_glance_graph_small_display_text_size">18.0</dimen>
+    <dimen name="sesl_glance_graph_small_title_text_size">@dimen/arc_progress_text_float_34</dimen>
+    <dimen name="sesl_glance_grid_item_small_circle_padding">@dimen/circle_padding_34</dimen>
+    <dimen name="sesl_glance_grid_item_small_circle_size">34.0dp</dimen>
+    <dimen name="sesl_glance_grid_item_with_label_medium_circle_padding">@dimen/circle_padding_34</dimen>
+    <dimen name="sesl_glance_grid_item_with_label_medium_circle_size">34.0dp</dimen>
+    <dimen name="sesl_glance_multi_textblock_small_display_text_size">14.0</dimen>
+    <dimen name="sesl_glance_multi_textblock_widesmall_display_text_size">18.0</dimen>
+    <dimen name="style_graph_small_display_text_size">18.0dp</dimen>
+    <dimen name="style_graph_small_title_text_size">@dimen/arc_progress_text_dp_34</dimen>
+    <dimen name="style_multi_textblock_small_display_text_size">14.0dp</dimen>
+    <dimen name="style_multi_textblock_widesmall_display_text_size">18.0dp</dimen>
+</resources>

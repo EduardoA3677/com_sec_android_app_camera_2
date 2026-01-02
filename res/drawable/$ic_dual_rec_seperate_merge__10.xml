@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="500" android:valueFrom="M 28.456 68.552 C 28.456 68.552 54.589 68.552 54.589 68.552 " android:valueTo="M 28.456 68.552 C 28.456 68.552 54.589 68.552 54.589 68.552 " android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="M 28.456 68.552 C 28.456 68.552 54.589 68.552 54.589 68.552 " android:valueTo="M 28.456 68.552 C 28.456 68.552 54.589 68.552 54.589 68.552 " android:valueType="pathType" android:propertyName="pathData" />
+    </set>
+</set>

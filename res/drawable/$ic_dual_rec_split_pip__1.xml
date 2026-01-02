@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$ic_dual_rec_split_pip__2" android:duration="500" android:valueFrom="M -48.186 -15.599 C -48.186 -15.599 -48.237 15.414 -48.237 15.414 C -48.237 15.407 -48.243 15.401 -48.25 15.401 C -48.25 15.401 15.5 15.375 15.5 15.375 " android:valueTo="M -15.5 -15.375 C -15.5 -15.375 -15.499 9.375 -15.499 9.375 C -15.499 12.675 -12.799 15.375 -9.499 15.375 C -9.499 15.375 15.5 15.375 15.5 15.375 " android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="M -15.5 -15.375 C -15.5 -15.375 -15.499 9.375 -15.499 9.375 C -15.499 12.675 -12.799 15.375 -9.499 15.375 C -9.499 15.375 15.5 15.375 15.5 15.375 " android:valueTo="M -15.5 -15.375 C -15.5 -15.375 -15.499 9.375 -15.499 9.375 C -15.499 12.675 -12.799 15.375 -9.499 15.375 C -9.499 15.375 15.5 15.375 15.5 15.375 " android:valueType="pathType" android:propertyName="pathData" />
+    </set>
+</set>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <com.sec.android.app.camera.setting.CameraRadioButtonPreference android:persistent="false" android:title="@string/watermark_overlay_on_picture" android:key="@string/key_watermark_overlay_on_picture" />
+        <com.sec.android.app.camera.setting.CameraRadioButtonPreference android:persistent="false" android:title="@string/watermark_show_in_frame" android:key="@string/key_watermark_show_in_frame" />
+    </PreferenceCategory>
+</PreferenceScreen>

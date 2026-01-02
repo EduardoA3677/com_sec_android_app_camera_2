@@ -1,0 +1,77 @@
+.class public Lkotlin/jvm/internal/t;
+.super Lkotlin/jvm/internal/s;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(LQ3/d;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 6
+
+    sget-object v1, Lkotlin/jvm/internal/e;->NO_RECEIVER:Ljava/lang/Object;
+
+    move-object v0, p1
+
+    check-cast v0, Lkotlin/jvm/internal/f;
+
+    invoke-interface {v0}, Lkotlin/jvm/internal/f;->a()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-static {p1}, Ljava/util/Objects;->nonNull(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    xor-int/lit8 v5, p1, 0x1
+
+    move-object v0, p0
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    invoke-direct/range {v0 .. v5}, Lkotlin/jvm/internal/z;-><init>(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Class;)V
+    .locals 6
+
+    sget-object v1, Lkotlin/jvm/internal/e;->NO_RECEIVER:Ljava/lang/Object;
+
+    move-object v0, p0
+
+    move-object v2, p4
+
+    move-object v3, p1
+
+    move-object v4, p3
+
+    move v5, p2
+
+    invoke-direct/range {v0 .. v5}, Lkotlin/jvm/internal/z;-><init>(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0}, Lkotlin/jvm/internal/s;->getGetter()LQ3/s;
+
+    move-result-object p0
+
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p0, LT3/s;
+
+    invoke-virtual {p0, p1}, LT3/s;->call([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method

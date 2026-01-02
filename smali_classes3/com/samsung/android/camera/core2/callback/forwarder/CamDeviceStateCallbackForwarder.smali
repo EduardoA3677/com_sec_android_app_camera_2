@@ -1,0 +1,85 @@
+.class public Lcom/samsung/android/camera/core2/callback/forwarder/CamDeviceStateCallbackForwarder;
+.super Lcom/samsung/android/camera/core2/callback/forwarder/CallbackForwarder;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/samsung/android/camera/core2/CamDevice$StateCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/samsung/android/camera/core2/callback/forwarder/CallbackForwarder<",
+        "Lcom/samsung/android/camera/core2/CamDevice$StateCallback;",
+        ">;",
+        "Lcom/samsung/android/camera/core2/CamDevice$StateCallback;"
+    }
+.end annotation
+
+
+# direct methods
+.method public static n(Lcom/sec/android/app/camera/engine/core/CameraDeviceManagerImpl;Landroid/os/Handler;)Lcom/samsung/android/camera/core2/callback/forwarder/CamDeviceStateCallbackForwarder;
+    .locals 1
+
+    new-instance v0, Lcom/samsung/android/camera/core2/callback/forwarder/CamDeviceStateCallbackForwarder;
+
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/camera/core2/callback/forwarder/CallbackForwarder;-><init>(Ljava/lang/Object;Landroid/os/Handler;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final onCameraDeviceClosed(Lcom/samsung/android/camera/core2/CamDevice;)V
+    .locals 2
+
+    new-instance v0, Lcom/samsung/android/camera/core2/callback/forwarder/k;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, p1, v1}, Lcom/samsung/android/camera/core2/callback/forwarder/k;-><init>(Lcom/samsung/android/camera/core2/callback/forwarder/CamDeviceStateCallbackForwarder;Lcom/samsung/android/camera/core2/CamDevice;I)V
+
+    invoke-virtual {p0, v0}, Lcom/samsung/android/camera/core2/callback/forwarder/CallbackForwarder;->m(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method public final onCameraDeviceDisconnected(Lcom/samsung/android/camera/core2/CamDevice;)V
+    .locals 2
+
+    new-instance v0, Lcom/samsung/android/camera/core2/callback/forwarder/k;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, p0, p1, v1}, Lcom/samsung/android/camera/core2/callback/forwarder/k;-><init>(Lcom/samsung/android/camera/core2/callback/forwarder/CamDeviceStateCallbackForwarder;Lcom/samsung/android/camera/core2/CamDevice;I)V
+
+    invoke-virtual {p0, v0}, Lcom/samsung/android/camera/core2/callback/forwarder/CallbackForwarder;->m(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method public final onCameraDeviceError(Lcom/samsung/android/camera/core2/CamDevice;I)V
+    .locals 1
+
+    new-instance v0, Lcom/samsung/android/camera/core2/callback/forwarder/g;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/samsung/android/camera/core2/callback/forwarder/g;-><init>(Lcom/samsung/android/camera/core2/callback/forwarder/CamDeviceStateCallbackForwarder;Lcom/samsung/android/camera/core2/CamDevice;I)V
+
+    invoke-virtual {p0, v0}, Lcom/samsung/android/camera/core2/callback/forwarder/CallbackForwarder;->m(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method public final onCameraDeviceOpened(Lcom/samsung/android/camera/core2/CamDevice;)V
+    .locals 2
+
+    new-instance v0, Lcom/samsung/android/camera/core2/callback/forwarder/k;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, p1, v1}, Lcom/samsung/android/camera/core2/callback/forwarder/k;-><init>(Lcom/samsung/android/camera/core2/callback/forwarder/CamDeviceStateCallbackForwarder;Lcom/samsung/android/camera/core2/CamDevice;I)V
+
+    invoke-virtual {p0, v0}, Lcom/samsung/android/camera/core2/callback/forwarder/CallbackForwarder;->m(Ljava/lang/Runnable;)V
+
+    return-void
+.end method

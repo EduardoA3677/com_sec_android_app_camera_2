@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$ic_dual_rec_merge_seperate__9" android:duration="500" android:valueFrom="M -33.587 -17.511 C -33.44 -17.513 -33.577 -17.514 -26.458 -17.514 C -26.458 -17.514 5.069 -17.514 5.069 -17.514 C 10.665 -17.514 15.243 -12.649 15.243 -6.701 C 15.243 -6.701 15.243 28.085 15.243 28.085 C 15.241 28.783 15.241 30.924 15.245 31.32 " android:valueTo="M -27.624 -18.405 C -26.385 -24.859 -20.675 -29.776 -13.873 -29.776 C -13.873 -29.776 13.827 -29.776 13.827 -29.776 C 21.527 -29.776 27.827 -23.476 27.827 -15.776 C 27.827 -15.776 27.827 15.823 27.827 15.823 C 27.827 22.68 22.83 28.428 16.299 29.604 " android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="M -27.624 -18.405 C -26.385 -24.859 -20.675 -29.776 -13.873 -29.776 C -13.873 -29.776 13.827 -29.776 13.827 -29.776 C 21.527 -29.776 27.827 -23.476 27.827 -15.776 C 27.827 -15.776 27.827 15.823 27.827 15.823 C 27.827 22.68 22.83 28.428 16.299 29.604 " android:valueTo="M -27.624 -18.405 C -26.385 -24.859 -20.675 -29.776 -13.873 -29.776 C -13.873 -29.776 13.827 -29.776 13.827 -29.776 C 21.527 -29.776 27.827 -23.476 27.827 -15.776 C 27.827 -15.776 27.827 15.823 27.827 15.823 C 27.827 22.68 22.83 28.428 16.299 29.604 " android:valueType="pathType" android:propertyName="pathData" />
+    </set>
+</set>

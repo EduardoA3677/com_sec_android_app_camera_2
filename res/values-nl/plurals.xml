@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="face_detected">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d gezicht</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d gezichten</item>
+    </plurals>
+    <plurals name="more_than_limit">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d teken invoeren.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Kan niet meer dan %d tekens invoeren.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nieuwe melding</item>
+        <item quantity="other">%d nieuwe meldingen</item>
+    </plurals>
+    <plurals name="my_filter_reached_max_count">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d aangepast filter maken.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Kan niet meer dan %d aangepaste filters maken.</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Slaaptijd: %d uur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Slaaptijd: %d uur</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Slaaptijd: %d minuut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Slaaptijd: %d minuten</item>
+    </plurals>
+    <plurals name="toast_hyperlaplse_duration_minutes">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <plurals name="toast_super_resolution_torch_high_temperature_warning">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Voorkom oververhitting en neem niet meer dan %d minuut met 8K-video op.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Voorkom oververhitting en neem niet meer dan %d minuten met 8K-video op.</item>
+    </plurals>
+    <plurals name="toast_torch_high_temperature_warning">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Voorkom oververhitting en neem niet meer dan %1$d minuut van %2$s op.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Voorkom oververhitting en neem niet meer dan %1$d minuten van %2$s op.</item>
+    </plurals>
+    <plurals name="tts_hyperlaplse_duration_minutes">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <plurals name="tts_photo_size">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d megapixel</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d megapixels</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_n_hours">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d uur</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_n_hours_one_minute">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uur één minuut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d uur één minuut</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_n_hours_one_minute_one_second">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uur één minuut één seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d uur één minuut één seconde</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_n_hours_one_second">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uur één seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d uur één seconde</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_n_minutes_one_second">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuut één seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d minuten één seconde</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_n_seconds">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d seconden</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_one_hour_n_minutes">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eén uur %d minuut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Eén uur %d minuten</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_one_hour_n_minutes_one_second">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eén uur %d minuut één seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Eén uur %d minuten één seconde</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_one_hour_n_seconds">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eén uur %d seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Eén uur %d seconden</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_one_hour_one_minute_n_seconds">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eén uur één minuut %d seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Eén uur één minuut %d seconden</item>
+    </plurals>
+    <plurals name="tts_recording_elapsed_time_one_minute_n_seconds">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eén minuut %d seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">Eén minuut %d seconden</item>
+    </plurals>
+</resources>

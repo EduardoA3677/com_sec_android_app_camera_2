@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dp" android:width="40.0dp" android:viewportWidth="40.0" android:viewportHeight="40.0" aapt:fps="60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="s2" android:pivotX="43.599" android:pivotY="43.6" android:scaleX="0.25" android:scaleY="0.25" android:translateX="-23.599" android:translateY="-23.6" aapt:layer_name="Layer 5 Outlines">
+        <group android:name="s2pg1" android:translateX="43.599" android:translateY="43.6" aapt:layer_name="Group 2">
+            <path android:name="s2pg1p10" android:pathData="M 31.099 20.7 C 31.099 26.421 26.419 31.1 20.699 31.1 C 20.699 31.1 -20.699 31.1 -20.699 31.1 C -26.419 31.1 -31.099 26.421 -31.099 20.7 C -31.099 20.7 -31.099 -20.7 -31.099 -20.7 C -31.099 -26.42 -26.419 -31.1 -20.699 -31.1 C -20.699 -31.1 20.699 -31.1 20.699 -31.1 C 26.419 -31.1 31.099 -26.42 31.099 -20.7 C 31.099 -20.7 31.099 20.7 31.099 20.7 Z" android:strokeColor="#fcfcfc" android:strokeWidth="5.0" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" aapt:style_name="Stroke 1" />
+        </group>
+    </group>
+    <group android:name="s1" android:pivotX="43.599" android:pivotY="43.6" android:scaleX="0.25" android:scaleY="0.25" android:translateX="-23.599" android:translateY="-23.6" aapt:layer_name="Layer 5 Outlines 2">
+        <clip-path android:name="s1m1" android:pathData="M 74.71 22.912 C 74.71 17.192 70.031 12.512 64.31 12.512 C 64.31 12.512 22.913 12.512 22.913 12.512 C 17.192 12.512 12.512 17.192 12.512 22.912 C 12.512 22.912 12.512 64.311 12.512 64.311 C 12.512 70.032 17.192 74.712 22.913 74.712 C 22.913 74.712 64.31 74.712 64.31 74.712 C 70.031 74.712 74.71 70.032 74.71 64.311 C 74.71 64.311 74.71 22.912 74.71 22.912 Z" />
+        <group android:name="s1pg1" android:translateX="59.098" android:translateY="28.225" aapt:layer_name="Group 1">
+            <path android:name="s1pg1p10" android:pathData="M -48.186 -15.599 C -48.186 -15.599 -48.237 15.414 -48.237 15.414 C -48.237 15.407 -48.243 15.401 -48.25 15.401 C -48.25 15.401 15.5 15.375 15.5 15.375 " android:strokeColor="#fcfcfc" android:strokeWidth="5.0" android:strokeLineCap="butt" android:strokeLineJoin="round" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" aapt:style_name="Stroke 1" />
+        </group>
+    </group>
+</vector>

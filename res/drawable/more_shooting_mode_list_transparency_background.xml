@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/more_top_button_background_high_contrast" />
+            <corners android:radius="@dimen/more_menu_list_background_radius" />
+        </shape>
+    </item>
+</layer-list>

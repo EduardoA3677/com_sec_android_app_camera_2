@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dp" android:width="40.0dp" android:viewportWidth="40.0" android:viewportHeight="40.0" aapt:fps="60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="s1" android:pivotX="47.66" android:pivotY="47.504" android:scaleX="0.25" android:scaleY="0.25" android:translateX="-27.626" android:translateY="-27.563" aapt:layer_name="Layer 4 Outlines 2">
+        <group android:name="s1pg1" android:pivotX="47.811" android:pivotY="47.354" aapt:layer_name="Group 1">
+            <group android:name="s1pg1pg5" android:translateX="41.523" android:translateY="53.484" aapt:layer_name="Group 5">
+                <path android:name="s1pg1pg5p10" android:pathData="M 29.618 19.219 C 29.618 24.94 24.938 29.619 19.218 29.619 C 19.218 29.619 -19.218 29.619 -19.218 29.619 C -24.938 29.619 -29.618 24.94 -29.618 19.219 C -29.618 19.219 -29.618 -19.219 -29.618 -19.219 C -29.618 -24.939 -24.938 -29.619 -19.218 -29.619 C -19.218 -29.619 19.218 -29.619 19.218 -29.619 C 24.938 -29.619 29.618 -24.939 29.618 -19.219 C 29.618 -19.219 29.618 19.219 29.618 19.219 Z" android:strokeColor="#fcfcfc" android:strokeWidth="4.762" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" aapt:style_name="Stroke 1" />
+            </group>
+            <group android:name="s1pg1pg4" android:translateX="55.891" android:translateY="41.38" aapt:layer_name="Group 4">
+                <path android:name="s1pg1pg4p10" android:pathData="M -27.624 -18.405 C -26.385 -24.859 -20.675 -29.776 -13.873 -29.776 C -13.873 -29.776 13.827 -29.776 13.827 -29.776 C 21.527 -29.776 27.827 -23.476 27.827 -15.776 C 27.827 -15.776 27.827 15.823 27.827 15.823 C 27.827 22.68 22.83 28.428 16.299 29.604 " android:strokeColor="#fcfcfc" android:strokeWidth="4.632" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" aapt:style_name="Stroke 1" />
+            </group>
+            <group android:name="s1pg1pg3" aapt:layer_name="Group 3">
+                <path android:name="s1pg1pg3p10" android:pathData="M 28.456 68.552 C 28.456 68.552 54.589 68.552 54.589 68.552 " android:strokeColor="#fcfcfc" android:strokeWidth="4.344" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" aapt:style_name="Stroke 1" />
+            </group>
+            <group android:name="s1pg1pg2" aapt:layer_name="Group 2">
+                <path android:name="s1pg1pg2p10" android:pathData="M 41.521 25.133 C 41.521 25.133 41.521 54.789 41.521 54.789 " android:strokeColor="#fcfcfc" android:strokeWidth="4.344" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" aapt:style_name="Stroke 1" />
+            </group>
+            <group android:name="s1pg1pg1" android:translateX="41.523" android:translateY="50.057" aapt:layer_name="Group 1">
+                <path android:name="s1pg1pg1p10" android:pathData="M 11.979 -5.646 C 11.979 -5.646 2.38 4.441 2.38 4.441 C 2.38 4.441 1.371 5.646 -0.001 5.646 C -1.372 5.646 -2.38 4.441 -2.38 4.441 C -2.38 4.441 -11.979 -5.646 -11.979 -5.646 " android:strokeColor="#fcfcfc" android:strokeWidth="4.4" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" aapt:style_name="Stroke 1" />
+            </group>
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preview_icon_ratio_fold_main">0.076</dimen>
+    <dimen name="preview_icon_ratio_fold_main_10x6">0.069</dimen>
+    <dimen name="preview_icon_ratio_fold_main_8x6">0.072</dimen>
+    <dimen name="sesl_glance_grid_item_medium_circle_padding">@dimen/circle_padding_44</dimen>
+    <dimen name="sesl_glance_grid_item_medium_circle_size">44.0dp</dimen>
+    <dimen name="sesl_glance_grid_item_small_circle_padding">@dimen/circle_padding_34</dimen>
+    <dimen name="sesl_glance_grid_item_small_circle_size">34.0dp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesl_glance_circular_progress_medium_icon_size">27.0dp</dimen>
+    <dimen name="sesl_glance_graph_medium_title_text_size">13.0</dimen>
+    <dimen name="style_graph_medium_title_text_size">13.0dp</dimen>
+</resources>

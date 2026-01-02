@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="about_page_margin">4.999995%</fraction>
+    <fraction name="frame_watermark_a_bottom_margin">9.249997%</fraction>
+    <fraction name="frame_watermark_a_brand_name_text_height">4.939997%</fraction>
+    <fraction name="frame_watermark_a_brand_name_text_size">3.9999962%</fraction>
+    <fraction name="frame_watermark_a_image_bottom_brand_margin">0.39999485%</fraction>
+    <fraction name="frame_watermark_a_image_bottom_margin">1.849997%</fraction>
+    <fraction name="frame_watermark_a_image_info_text_height">3.700006%</fraction>
+    <fraction name="frame_watermark_a_image_info_text_size">2.7799964%</fraction>
+    <fraction name="frame_watermark_a_side_margin">5.2600026%</fraction>
+    <fraction name="frame_watermark_b_bottom_margin">18.519997%</fraction>
+    <fraction name="frame_watermark_b_brand_name_text_height">5.8699965%</fraction>
+    <fraction name="frame_watermark_b_brand_name_text_size">4.6300054%</fraction>
+    <fraction name="frame_watermark_b_date_side_margin">10.150003%</fraction>
+    <fraction name="frame_watermark_b_date_top_margin">6.2000036%</fraction>
+    <fraction name="frame_watermark_b_image_bottom_margin">2.4999976%</fraction>
+    <fraction name="frame_watermark_b_image_info_bottom_margin">8.000004%</fraction>
+    <fraction name="frame_watermark_b_image_info_text_height">3.9999962%</fraction>
+    <fraction name="frame_watermark_b_image_info_text_size">3.1000018%</fraction>
+    <fraction name="frame_watermark_b_side_margin">14.8%</fraction>
+    <fraction name="frame_watermark_b_top_margin">22.2%</fraction>
+    <fraction name="shooting_mode_overlay_floating_shutter_button_default_percent_pos_delta_y">26.499998%</fraction>
+    <fraction name="shooting_mode_overlay_floating_shutter_button_default_percent_pos_x">71.1%</fraction>
+    <fraction name="widget_land_image_layer_width">50.5%</fraction>
+    <fraction name="widget_land_scroll_layer_width">49.5%</fraction>
+</resources>

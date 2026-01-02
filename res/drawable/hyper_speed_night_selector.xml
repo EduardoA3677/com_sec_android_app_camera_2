@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/menu_recording_motion_speed_menu_dialer_tick_label_drawable_height" android:width="@dimen/menu_recording_motion_speed_menu_dialer_tick_label_drawable_width">
+        <level-list>
+            <item android:drawable="@drawable/hyper_speed_night_img" android:maxLevel="0" />
+            <item android:drawable="@drawable/hyper_speed_night_img_on" android:maxLevel="1" />
+        </level-list>
+    </item>
+</selector>
