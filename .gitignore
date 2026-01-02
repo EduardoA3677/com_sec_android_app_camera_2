@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+dist/
+*.apk
+*.ap_
+
+# Backup files
+*.orig
+*.bak
+
+# Temporary files
+*.tmp
+/tmp/
+
+# APK Tool output
+*.dex
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
