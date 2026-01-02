@@ -1355,6 +1355,12 @@
 .method public process(Ljava/nio/ByteBuffer;Lcom/samsung/android/camera/core2/container/PictureDataInfo;Lcom/sec/android/app/camera/engine/interfaces/CaptureInfo;)V
     .locals 4
 
+    const-string v0, "PictureProcessor"
+
+    const-string v1, "Starting picture processing"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     iget-object v0, p2, Lcom/samsung/android/camera/core2/container/PictureDataInfo;->a:Lcom/samsung/android/camera/core2/util/SemImageFormat;
 
     invoke-interface {p3}, Lcom/sec/android/app/camera/engine/interfaces/CaptureInfo;->getCaptureType()Lcom/sec/android/app/camera/engine/interfaces/CaptureManager$CaptureType;
@@ -1400,6 +1406,12 @@
     invoke-virtual {p1, p2}, Lcom/sec/android/app/camera/engine/capture/PictureSavingInfo$Builder;->setPictureInfo(Lcom/samsung/android/camera/core2/container/PictureDataInfo;)Lcom/sec/android/app/camera/engine/capture/PictureSavingInfo$Builder;
 
     invoke-direct {p0, v2, p3, p2}, Lcom/sec/android/app/camera/engine/capture/PictureProcessor;->processPicture(Lcom/sec/android/app/camera/engine/capture/PictureSavingInfo$Builder;Lcom/sec/android/app/camera/engine/interfaces/CaptureInfo;Lcom/samsung/android/camera/core2/container/PictureDataInfo;)V
+
+    const-string p1, "PictureProcessor"
+
+    const-string p2, "Picture processing completed"
+
+    invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
