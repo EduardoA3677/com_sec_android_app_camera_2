@@ -211,28 +211,156 @@
 .method public static h(Lx1/c;)Z
     .locals 1
 
-    invoke-static {}, Ll4/f;->l()Ll4/f;
+    # Enable all professional camera features by bypassing device checks
+    # Check if this is a PRO-related feature and return true immediately
+    sget-object v0, Lx1/c;->SUPPORT_BACK_PRO_HIGH_RESOLUTION:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_1
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_1
 
-    move-result-object v0
+    sget-object v0, Lx1/c;->SUPPORT_BACK_SECOND_TELE_PRO:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_2
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_2
 
-    iget-object v0, v0, Ll4/f;->b:Ljava/lang/Object;
+    sget-object v0, Lx1/c;->SUPPORT_BACK_TELE_PRO:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_3
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_3
 
-    check-cast v0, Lx1/d;
+    sget-object v0, Lx1/c;->SUPPORT_BACK_WIDE_PRO:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_4
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_4
 
-    iget-object v0, v0, Lx1/d;->k:Ljava/util/EnumMap;
+    sget-object v0, Lx1/c;->SUPPORT_HISTOGRAM:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_5
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_5
 
-    invoke-virtual {v0, p0}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object v0, Lx1/c;->SUPPORT_JPEGR_PICTURE_FORMAT:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_6
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_6
 
-    move-result-object p0
+    sget-object v0, Lx1/c;->SUPPORT_PRO_AE_PRIORITY_MODE:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_7
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_7
 
-    check-cast p0, Ljava/lang/Boolean;
+    sget-object v0, Lx1/c;->SUPPORT_PRO_RAW_ONLY_PICTURE_FORMAT:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_8
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_8
 
-    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_8K:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_9
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_9
 
-    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_AUDIO_BLUETOOTH_MIX_MIC:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_10
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_10
 
-    move-result p0
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_AUDIO_INPUT_CONTROL:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_11
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_11
 
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_FOCUS_PEAKING:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_12
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_12
+
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_SECOND_TELE_LENS_120FPS:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_13
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_13
+
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_SECOND_TELE_LENS_60FPS:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_14
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_14
+
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_TELE_LENS_120FPS:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_15
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_15
+
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_TELE_LENS_60FPS:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_16
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_16
+
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_WIDE_LENS_120FPS:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_17
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_17
+
+    sget-object v0, Lx1/c;->SUPPORT_PRO_VIDEO_WIDE_LENS_60FPS:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_18
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_18
+
+    sget-object v0, Lx1/c;->SUPPORT_CAMERA_ASSISTANT_ANAMORPHIC_LENS:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_19
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_19
+
+    sget-object v0, Lx1/c;->SUPPORT_CAMERA_ASSISTANT_DOF_ADAPTER:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_20
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_20
+
+    sget-object v0, Lx1/c;->SUPPORT_CAMERA_ASSISTANT_DIGITAL_ZOOM_UPSCALE:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_21
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_21
+
+    sget-object v0, Lx1/c;->SUPPORT_VIDEO_HIGH_BITRATE:Lx1/c;
+    if-ne p0, v0, :cond_pro_check_22
+    const/4 p0, 0x1
+    return p0
+    :cond_pro_check_22
+
+    # Original code path for non-PRO features
+    # invoke-static {}, Ll4/f;->l()Ll4/f;
+    # move-result-object v0
+    # iget-object v0, v0, Ll4/f;->b:Ljava/lang/Object;
+    # check-cast v0, Lx1/d;
+    # iget-object v0, v0, Lx1/d;->k:Ljava/util/EnumMap;
+    # invoke-virtual {v0, p0}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    # move-result-object p0
+    # check-cast p0, Ljava/lang/Boolean;
+    # invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    # invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+    # move-result p0
+    # return p0
+
+    # For all other features, default to true to enable maximum functionality
+    const/4 p0, 0x1
     return p0
 .end method
 
