@@ -5599,6 +5599,12 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
 
+    const-string v0, "Camera16"
+
+    const-string v1, "Camera.onCreate() - Starting main activity initialization"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-super {p0, p1}, Ldagger/android/support/a;->onCreate(Landroid/os/Bundle;)V
 
     const-string p1, "onCreate"
@@ -5631,6 +5637,12 @@
 
     iput-boolean v1, p0, Lcom/sec/android/app/camera/Camera;->mIsLaunchedFromOnCreate:Z
 
+    const-string p1, "Camera16"
+
+    const-string v0, "Registering back invoked callback"
+
+    invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-virtual {p0}, Landroid/app/Activity;->getOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
 
     move-result-object p1
@@ -5642,6 +5654,12 @@
     invoke-interface {p1, v3, v2}, Landroid/window/OnBackInvokedDispatcher;->registerOnBackInvokedCallback(ILandroid/window/OnBackInvokedCallback;)V
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->setShowWhenLocked(Z)V
+
+    const-string p1, "Camera16"
+
+    const-string v0, "Starting background handler thread"
+
+    invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->startBackgroundHandler()V
 
@@ -5829,6 +5847,12 @@
 .method public onDestroy()V
     .locals 4
 
+    const-string v0, "Camera16"
+
+    const-string v1, "Camera.onDestroy() - Destroying camera activity and cleaning up resources"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onDestroy()V
 
     const/4 v0, 0x1
@@ -5844,6 +5868,12 @@
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsRunning:Z
+
+    const-string v1, "Camera16"
+
+    const-string v2, "Unregistering back invoked callback"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
 
@@ -6460,6 +6490,12 @@
 .method public onPause()V
     .locals 6
 
+    const-string v0, "Camera16"
+
+    const-string v1, "Camera.onPause() - Pausing camera activity"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-super {p0}, Landroidx/fragment/app/FragmentActivity;->onPause()V
 
     const/4 v0, 0x1
@@ -6475,6 +6511,12 @@
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsRunning:Z
+
+    const-string v1, "Camera16"
+
+    const-string v2, "Stopping camera engine and acquiring DVFS lock"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mDvfsManager:Lcom/sec/android/app/camera/DvfsManager;
 
@@ -6664,6 +6706,12 @@
 .method public onResume()V
     .locals 5
 
+    const-string v0, "Camera16"
+
+    const-string v1, "Camera.onResume() - Resuming camera activity"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-super {p0}, Landroidx/fragment/app/FragmentActivity;->onResume()V
 
     const-string v0, "onResume"
@@ -6691,6 +6739,12 @@
     iput-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsGalleryActivityLaunching:Z
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsSettingActivityLaunching:Z
+
+    const-string v1, "Camera16"
+
+    const-string v3, "Resetting activity launch flags"
+
+    invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     sget-object v3, Lcom/sec/android/app/camera/Camera;->mRecreatingCameraToFullWindow:Landroidx/lifecycle/MutableLiveData;
 

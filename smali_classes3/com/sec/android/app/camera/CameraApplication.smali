@@ -41,7 +41,13 @@
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
-    .locals 0
+    .locals 2
+
+    const-string v0, "CameraApp"
+
+    const-string v1, "Configuration changed - Broadcasting to components"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-super {p0, p1}, Landroid/app/Application;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -58,6 +64,12 @@
 
 .method public onCreate()V
     .locals 4
+
+    const-string v0, "CameraApp"
+
+    const-string v1, "CameraApplication.onCreate() - Starting application initialization"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     const-string v0, "Launch - FeatureLoading"
 
@@ -79,7 +91,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
+    goto :cond_1
+
     :cond_0
+    const-string v2, "CameraApp"
+
+    const-string v3, "Application context initialized successfully"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
     sput-object v1, Lx1/f;->d:Landroid/content/Context;
 
     sget-object v1, Lx1/f;->c:Ljava/util/concurrent/CountDownLatch;
@@ -90,17 +111,41 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/util/PerformanceLog;->log(Ljava/lang/String;Z)V
 
+    const-string v0, "CameraApp"
+
+    const-string v1, "Initializing ActionStateSet"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/sec/android/app/camera/executor/ActionStateSet;->initialize(Landroid/content/Context;)V
 
+    const-string v0, "CameraApp"
+
+    const-string v1, "Initializing SaLogUtil"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-static {p0}, Lcom/sec/android/app/camera/logging/SaLogUtil;->init(Landroid/app/Application;)V
+
+    const-string v0, "CameraApp"
+
+    const-string v1, "Initializing CameraResources"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-static {p0}, Lcom/sec/android/app/camera/util/CameraResources;->init(Landroid/content/Context;)V
 
     invoke-super {p0}, Ldagger/android/b;->onCreate()V
+
+    const-string v0, "CameraApp"
+
+    const-string v1, "CameraApplication.onCreate() - Application initialization completed"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

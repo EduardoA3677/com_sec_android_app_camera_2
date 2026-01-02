@@ -16,6 +16,14 @@
 
 .field public static final VERSION_NAME:Ljava/lang/String; = "16.0.00.66"
 
+.field public static final ENABLE_VERBOSE_LOGGING:Z = true
+
+.field public static final ENABLE_PERFORMANCE_MONITORING:Z = true
+
+.field public static final ENABLE_SECURITY_CHECKS:Z = true
+
+.field public static final ENABLE_EXPERIMENTAL_FEATURES:Z = false
+
 
 # direct methods
 .method public constructor <init>()V
