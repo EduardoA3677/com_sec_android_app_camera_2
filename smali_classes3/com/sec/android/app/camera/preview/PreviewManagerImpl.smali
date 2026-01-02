@@ -2246,21 +2246,45 @@
 .end method
 
 .method public startSurfaceManager()V
-    .locals 0
+    .locals 2
+
+    const-string v0, "PreviewManager"
+
+    const-string v1, "Starting surface manager for preview"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object p0, p0, Lcom/sec/android/app/camera/preview/PreviewManagerImpl;->mPreviewSurfaceManager:Lcom/sec/android/app/camera/preview/PreviewSurfaceManager;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/preview/PreviewSurfaceManager;->start()V
 
+    const-string v0, "PreviewManager"
+
+    const-string v1, "Surface manager started successfully"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     return-void
 .end method
 
 .method public stopSurfaceManager()V
-    .locals 0
+    .locals 2
+
+    const-string v0, "PreviewManager"
+
+    const-string v1, "Stopping surface manager"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object p0, p0, Lcom/sec/android/app/camera/preview/PreviewManagerImpl;->mPreviewSurfaceManager:Lcom/sec/android/app/camera/preview/PreviewSurfaceManager;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/preview/PreviewSurfaceManager;->stop()V
+
+    const-string v0, "PreviewManager"
+
+    const-string v1, "Surface manager stopped"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

@@ -938,7 +938,7 @@
 
     const-string p1, "RequestPermission"
 
-    const-string v0, "onCreate"
+    const-string v0, "onCreate - Starting permission request activity"
 
     invoke-static {p1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -952,7 +952,7 @@
 
     if-nez v0, :cond_0
 
-    const-string p0, "onResume : extras can\'t be null"
+    const-string p0, "onResume : extras can\'t be null - Security check failed"
 
     invoke-static {p1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -968,6 +968,12 @@
     move-result p1
 
     if-le p1, v1, :cond_1
+
+    const-string v0, "RequestPermission"
+
+    const-string v1, "Applying custom theme for permission dialog"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->setTheme(I)V
 
